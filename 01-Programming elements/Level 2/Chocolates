@@ -1,0 +1,16 @@
+import java.lang.*;
+import java.util.*;
+class Level2 {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+int n;
+int c;
+System.out.println("Enter the number of children and number of chocolates");
+n=sc.nextInt();
+c=sc.nextInt();
+
+int d=c/n, r=c%n;
+System.out.println("The number of chocolates each child gets is " + d + " and the remaining chocolates is "
++ r);
+}
+}
