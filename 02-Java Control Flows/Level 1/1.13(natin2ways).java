@@ -1,0 +1,25 @@
+import java.lang.*;
+import java.util.*;
+class Level2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n;
+        System.out.println("Enter the number");
+        n = sc.nextInt();
+        int b = 0;
+        if (n > 0) {
+            b = n * (n + 1) / 2;
+        }
+        int s = 0;
+        while (n > 0) {
+            s += n;
+            n--;
+        }
+        if (b == s) {
+            System.out.println("Both the values are same");
+        } else {
+            System.out.println("They are not same");
+        }
+        System.out.println("Sum of the natural numbers is " + s);
+    }
+}

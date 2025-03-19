@@ -1,0 +1,16 @@
+import java.lang.*;
+import java.util.*;
+class Level2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n;
+        System.out.println("Enter the number");
+        n = sc.nextInt();
+        int s=1;
+        for(int i=1;i<=n;i++)
+        {
+            s*=i;
+        }
+        System.out.println(s);
+    }
+}
